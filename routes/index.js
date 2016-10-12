@@ -23,14 +23,12 @@ connection.connect();
 
   //   connection.query(selSql, function(err, rows, fields) {
   //         if (err) throw err;
-  //         console.log(rows)
   //   });
   //删除操作
   // var delSql = "DELETE FROM users WHERE user_id = '2'";
 
   //   connection.query(delSql, function(err, rows, fields) {
   //         if (err) throw err;
-  //         console.log(rows)
   //   });
   
 //更改操作
@@ -38,7 +36,6 @@ connection.connect();
 
     connection.query(upSql, function(err, rows, fields) {
           if (err) throw err;
-          console.log(rows)
     });
  
 connection.end();
