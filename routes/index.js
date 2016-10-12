@@ -16,7 +16,7 @@ data.forEach(function(item){
 connection.query(oneSql, function(err, rows, fields) {
   if (err) throw err;  
 });
-})
+}) 
 //var oneSql = "INSERT INTO users(user_id,user_name,user_age,user_gend) VALUES(1,'zz',12,'nan')";
 
  
