@@ -10,6 +10,7 @@ var connection = mysql.createConnection({
 });
  
 connection.connect();
+<<<<<<< HEAD
 // data.forEach(function(item){
 //   var oneSql = `INSERT INTO users(user_id,user_name,user_age,user_gend) VALUES(${item.id},'${item.name}',${item.age},'${item.gend}')`;
 
@@ -17,6 +18,15 @@ connection.connect();
 //   if (err) throw err;
 // });
 // })
+=======
+data.forEach(function(item){
+  var oneSql = `INSERT INTO users(user_id,user_name,user_age,user_gend) VALUES(${item.id},'${item.name}',${item.age},'${item.gend}')`;
+
+connection.query(oneSql, function(err, rows, fields) {
+  if (err) throw err;  
+});
+}) 
+>>>>>>> acae65b2bb384367e414bb09d67f32d4d60cf40d
 //var oneSql = "INSERT INTO users(user_id,user_name,user_age,user_gend) VALUES(1,'zz',12,'nan')";
 //查询操作
   // var selSql = "SELECT * FROM users WHERE user_id = '2'";
