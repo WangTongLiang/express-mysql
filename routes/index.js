@@ -30,7 +30,7 @@ connection.connect();
   //   connection.query(delSql, function(err, rows, fields) {
   //         if (err) throw err;
   //   });
-  
+   
 //更改操作
   var upSql = "UPDATE users SET user_gend = \"好吧就这样吧\" WHERE user_id = '3'";
 
